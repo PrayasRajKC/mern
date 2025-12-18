@@ -14,12 +14,17 @@
           padding: 0;
          }
          header h1 {
-          color: red;
+          color: red; 
+          font-size: 700%;
+          text-align: center;
          }
-          p {
-            font-size: 130%;
+          #para {
+            font-size: 250%;
+            text-align: center;
+            color: rgb(123, 0, 255);
+            
           }
-         #sec-1  {
+         #sec-1  h1{
           color: hotpink;
          }
          #sec-2 {
@@ -31,18 +36,30 @@
           .descrip>h2 {
             color: gold;
           }
+      #sec-a {
+        color: blue;
+        text-align: left;
+        margin: 50px;
+      }
     </style>
 
-  </head>
-
+  </head>  
   <body>
+    
+
     <header>
-      <h1 id="head">CSS</h1>
-      <p  >CSS is a styling code</p> <br>
+      <h1 id="head">CSS</h1><br><br>
+      <p id="para">CSS is a styling code</p> <br><br><br>
     </header>
     <section id="sec-1">
-      <h1>CSS can be inline , external ir imbedded</h1><br>
-    </section>
+      <h1>CSS can be:</h1>
+ <ul type="circle" id="sec-a">
+          <li>Inlined</li>
+          <li>Embedded</li>
+          <li>External</li>
+        </ul>
+      <br>
+    </section><br><br>
     <section id="sec-2">
       <h2>CSS is used for styling the website</h2><br>
     </section>
