@@ -8,9 +8,7 @@
 
     <title>CSS</title>
     <style>
-
-         * {
-          margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');          margin: 0;
           padding: 0;
          }
          header h1 {
@@ -38,24 +36,55 @@
           }
           .descrip p{
             margin: 5px;
-            /* padding: 5px; */
           }
-      #sec-a {
-        color: blue;
+        ul {
+        color: rgb(102, 255, 0);
         text-align: left;
         margin: 15px;
         background-color: brown;
         padding: 1px;
       }
-        #parents p , #parents ~p {
-          margin: 10px;
+        /* #parents p , #parents ~p {
+          margin: 10px; */
         }
       #parents >p{
         color: aqua; 
       }
-      #parents ~ p {
+      #parents + p {
         color: rgb(30, 255, 10);
       }
+        li:nth-child(2n+1){
+          color: rgb(46, 0, 139);  
+        }
+        .hover h1:hover{
+          background-color: lawngreen;
+        }
+        .specific span{
+          color: greenyellow;
+        }
+        body {
+          padding: 10px;
+        }
+        input[type='text']{
+          background-color: red;
+        }
+        input[type='email']:focus{
+          color: rgb(95, 103, 160);
+        }
+        .hello {
+          color: red;
+        }
+        #pas {
+          /* text-decoration: underline 2px red ; */
+          text-underline-offset: 6px;
+          /* text-align: center; */
+          text-transform: uppercase;
+          text-indent: 50px;
+          text-shadow: 10px 10px 5px rebeccapurple, 15px 15px 10px green;
+          color: rgba(200, 150, 100,0.6);
+          font-weight: 700;
+           font-family: "BBH Bartle", sans-serif;
+        }
     </style>
 
   </head>  
@@ -68,7 +97,7 @@
     </header>
     <section id="sec-1">
       <h1>CSS can be:</h1>
- <ul type="circle" id="sec-a">
+ <ul type="circle">
           <li>Inlined</li>
           <li>Embedded</li>
           <li>External</li>
@@ -95,7 +124,30 @@
     </section>
     <p>Pragraph no. 5</p>
     <p>Pragaraph no. 6</p>
-    
+<br><br>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>PHP</li>
+      <li>JAVA</li>
+      <li>PYTHON</li>
+      <li>DATABASE</li>
+    </ol> <br>
+    <div class="hover">
+    <h1>Touch to change the color</h1></div>
+    <div class="specific">
+          <p>Lorem ipsum, dolor sit amet <span>consectetur</span> adipisicing elit. Cupiditate nemo rerum, optio, iusto error deleniti dolor officia maiores voluptatum eos, tempore velit praesentium. Itaque libero nulla, dolorum id nostrum quisquam.</p>
+    </div>
+    <br>
+    <input type="text" placeholder="username">
+    <input type="email" placeholder="example@gmail.com">
+<div class="hello">
+    <p>hello</p>
+    <span>sello</span>
+    <h3>kello</h3></div><br>
+
+    <p id="pas">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p> <br><br>
 
   </body>
 
