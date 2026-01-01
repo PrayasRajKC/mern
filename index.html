@@ -1,197 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CSS</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');     
-          *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-         }
-         header h1 {
-          color: red; 
-          font-size: 700%;
-          text-align: center;
-         }
-          #para {
-            font-size: 250%;
-            text-align: center;
-            color: rgb(123, 0, 255);
-            
-          }
-         #sec-1  h1{
-          color: hotpink;
-         }
-         #sec-2 {
-            color: rgb(0, 255, 162);
-          }
-          .descrip>h1 {
-            color: coral;
-          }
-          .descrip>h2 {
-            color: gold;
-          }
-          .descrip p{
-            margin: 5px;
-          }
-        ul {
-        color: rgb(102, 255, 0);
-        text-align: left;
-        margin: 15px;
-        background-color: brown;
-        padding: 1px;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .logo {
+    display: flex;
+    gap: 5px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  .display-section {
+    height: 600px;
+    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+   .dis-info {
+        display: flex;
+        gap: 10px;
+        color: white;
+        align-items: baseline;
       }
-        /* #parents p , #parents ~p {
-          margin: 10px; }*/
+
+  .br {
+    background-color: #37393A;
+        font-size: 20px;
+        padding: 15px;
+        display: inline-block;
+        color: white;
         
-      #parents >p{
-        color: aqua; 
+  }
+    main {
+        padding: 0 20px;
       }
-      #parents + p {
-        color: rgb(30, 255, 10);
+
+      .projects {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
-        li:nth-child(2n+1){
-          color: rgb(46, 0, 139);  
-        }
-        .hover h1:hover{
-          background-color: lawngreen;
-        }
-        .specific span{
-          color: greenyellow;
-        }
-        body {
-          padding: 10px;
-        }
-        input[type='text']{
-          background-color: red;
-        }
-        input[type='email']:focus{
-          color: rgb(95, 103, 160);
-        }
-        .hello {
-          color: red;
-        }
-        #pas {
-          /* text-decoration: underline 2px red ; */
-          text-underline-offset: 6px;
-          /* text-align: center; */
-          text-transform: uppercase;
-          text-indent: 50px;
-          text-shadow: 10px 10px 5px rebeccapurple, 15px 15px 10px green;
-          color: rgb(100, 200, 160);
-          font-weight: 700;
-           font-family: "BBH Bartle", sans-serif;
-        }
-        #height {
-          line-height: 1rem;
-          word-spacing: 0.5rem;
-        }
-        
-      #box1 {
-          height: 200px;
-          width: 200px;
-          background: purple;
-          border: 2px solid black;
-          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
-          position: absolute;
-          
-        }
-        #box2 {
-          height: 200px;
-          width: 200px;
-          background: red;
-          border: 2px solid black;
-          margin-left: 200px;
-          position: absolute;
-        }
-        #box3 {
-          height: 200px;
-          width: 200px;
-          background: blue;
-          border: 2px solid black;
-          margin-left: 400px;
-          position: absolute;
-        }
-    </style>
 
-  </head>  
-  <body>
-    
+      .houses {
+        display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
 
-    <header>
-      <h1 id="head">CSS</h1><br><br>
-      <p id="para">CSS is a styling code</p> <br><br><br>
-    </header>
-    <section id="sec-1">
-      <h1>CSS can be:</h1>
- <ul type="circle">
-          <li>Inlined</li>
-          <li>Embedded</li>
-          <li>External</li>
-        </ul>
-      <br>
-    </section><br><br>
-    <section id="sec-2">
-      <h2>CSS is used for styling the website</h2><br>
-    </section>
-    <br>
-    <div class="descrip">
-      <h1>HTML and CSS website</h1><br>
-      <h2>CSS and HTML </h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt perferendis consequuntur hic sequi beatae quidem, velit doloremque at, voluptates laborum alias eum. Dicta rerum et cupiditate recusandae, accusantium ratione.</p>
-    </div><br><br>
-    <section id="parents">
-      <h1>PARAGPAPH</h1>
-      <p>Paragraph no. 1</p>
-      <p>Paragraph no. 2</p>
-      <section>
-        <p>Paragprah no. 3</p>
-        <p>Pragaraph no. 4</p>
-      </section>
-    </section>
-    <p>Pragraph no. 5</p>
-    <p>Pragaraph no. 6</p>
-<br><br>
-    <ol>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>PHP</li>
-      <li>JAVA</li>
-      <li>PYTHON</li>
-      <li>DATABASE</li>
-    </ol> <br>
-    <div class="hover">
-    <h1>Touch to change the color</h1></div>
-    <div class="specific">
-          <p>Lorem ipsum, dolor sit amet <span>consectetur</span> adipisicing elit. Cupiditate nemo rerum, optio, iusto error deleniti dolor officia maiores voluptatum eos, tempore velit praesentium. Itaque libero nulla, dolorum id nostrum quisquam.</p>
+      .house img {
+        width: 100%;
+      }
+
+      .house {
+        position: relative;
+      }
+
+      .house h3 {
+        position: absolute;
+        top: 0;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+      }
+      @media(max-width: 450px) {
+        header {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+  </style>
+  <link rel="icon" href="assets/images/chess-player_17226410.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h4>BR</h4>
+      <p>Architects</p>
     </div>
-    <br>
-    <input type="text" placeholder="username">
-    <input type="email" placeholder="example@gmail.com">
-<br>
+    <nav>
+      <a href="">Projects</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+  <section class="display-section">
+    <div class="dis-info">
+    <span class="br">BR</span>
+    <h2>Architects</h2></div>
+  </section>
+  <main>
 
-    <p id="pas">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    </p> <br><br>
-    <p id="height">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque iste voluptatem, debitis maiores unde cupiditate quia? Fuga rem eveniet dolores.</p>
+      <section class="projects">
+        <h1>Projects</h1>
+        <hr>
 
-    <div id="box">HTML & CSS</div>
-    <br><br>
-    <div id="click">Press & HOld</div><br><br>
-    <div id="rotate">Rotate</div>
-    <div id="scale">Scale</div>
-    <div id="color">Colors</div><br><br>
-    <div class="mainbox">
-<div id="box1">BOX1</div>
-<div id="box2">BOX2</div>
-<div id="box3">BOX3</div></div>
-  </body>
 
+        <div class="houses">
+
+
+          <div class="house">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+          </div>
+          <div class="house">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+          </div>
+          <div class="house">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+          </div>
+          <div class="house">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+          </div>
+          <div class="house">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+           </div>
+            </div>
+         </section>
+    </main> 
+    <script>
+
+      const rev = ScrollReveal();
+      rev.reveal('.houses', { delay: 500, origin: 'left', duration: 500, distance: '50px' });
+      // rev.reveal('.houses', { delay: 1000, origin: 'left' });
+
+
+
+
+    </script>
+</body>
 </html>
-
