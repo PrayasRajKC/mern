@@ -93,6 +93,10 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+   <h5>Some text to enable scrolling</h5>
+
+    <button onclick="handelChange()">Click</button>
+
   <header>
     <div class="logo">
       <h4>BR</h4>
@@ -142,13 +146,25 @@
             </div>
          </section>
     </main> 
-    <script>
+   <script>
 
-      const rev = ScrollReveal();
-      rev.reveal('.houses', { delay: 500, origin: 'left', duration: 500, distance: '50px' });
-      // rev.reveal('.houses', { delay: 1000, origin: 'left' });
+      const rev = ScrollReveal({
+        delay: 500,
+        duration: 500,
+        distance: '50px'
+      });
+      rev.reveal('.logo', { origin: 'left', });
+      rev.reveal('nav', { origin: 'right', });
+      rev.reveal('.house', { origin: 'left', interval: 100 });
 
 
+      const h5Element = document.querySelector('h5');
+
+      const handelChange = () => {
+        h5Element.style.fontSize = '50px';
+        h5Element.style.color = 'red';
+
+      }
 
 
     </script>
